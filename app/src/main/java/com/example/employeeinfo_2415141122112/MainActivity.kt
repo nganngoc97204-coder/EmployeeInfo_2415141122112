@@ -13,7 +13,7 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        // Khởi tạo thông tin nhân viên riêng từ Model (Đảm bảo không trùng lập)
+
         val employee = Employee(
             id = "NV2415141122112",
             name = "Hoang Ngan",
@@ -24,7 +24,7 @@ class MainActivity : AppCompatActivity() {
             experience = 3 // 3 năm thâm niên
         )
 
-        // Hiển thị dữ liệu lên giao diện qua ViewBinding & Extension Functions
+
         with(binding) {
             tvName.text = "Họ và tên: ${employee.name.toUpperName()}"
             tvEmployeeId.text = "Mã NV: ${employee.id}"
